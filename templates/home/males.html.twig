@@ -1,0 +1,210 @@
+<!DOCTYPE >
+<html>
+		<head>
+			<title></title>
+
+			<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+				<link rel="stylesheet" type="text/css" href="../css_mjtom/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css_mjtom/site.css">
+        <link href="..//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="..//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="..//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+		</head>
+
+		<body>
+			
+		<img src="../images_mjtom/logo.png"  class="img-fluid" alt="Responsive image" >
+
+	<nav class="menu" style="background-color: none;">  
+   <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="Accueil.html">Accueil</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Lachatterie.html">La Chatterie</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="larace.html">La race</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link actif" href="males.html">Mâles</a>
+  </li> <li class="nav-item">
+    <a class="nav-link" href="femelles.html">Femelles</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="chatons.html">Chatons</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="retraites.html" tabindex="-1" aria-disabled="true">Retraités</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+  </li>
+</ul>
+  
+</nav>
+
+<div class="d-flex justify-content-around" id="zoom"> 
+  <div><img class="test" src="../images_mjtom/males_L.png" alt="..."></div>
+  <div><img class="test" src="../images_mjtom/males_NG.png"  alt="..."></div>
+  <div><img class="test" src="../images_mjtom/menu-LR.png" alt="..."></div>
+</div>
+
+
+
+<!--Test cadre ici -->
+
+
+<div class="section enlevscroll">
+  <div class="top-border left"></div>
+  <div class="top-border right"></div>
+
+  <h1>SAILLIES EXTÉRIEURES</h1>
+  <p>Certains de nos mâles sont disponibles en saillies extérieures sous <button type="button" class="btn btn-link" data-container="body" data-toggle="popover" data-placement="right" data-content="La femelle sera agée d'au moins un an ayant déjà eu des chaleurs pour un poids minimum de 4kg.
+    Les tests FIV/FEV seront négatifs avant saillie.
+  Echo cardio et rénale aux 1 an de l'animal sain + test ADN négatifs.
+Le reste des modalités sera vu ultérieurement avec l'éleveur.">
+  conditions *
+</button>. Merci de vous assurez de bien en prendre connaissance avant toute sollicitation.</p>
+    <button class ="sallie_btn" type="button" data-toggle="modal" data-target=".bd-example-modal-xl">RÉSERVER UNE SAILLIE</button>
+</div>
+
+
+<!--Mon modal  formulaire de réservation de saillie-->
+</?php echo
+
+<form class="form_males"  method="post" action="'.$form_action.'">
+  <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+     
+     <div class="col">
+
+  
+
+ <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input"required>
+  <label class="custom-control-label" for="customRadioInline1">Professionnel</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+  <label class="custom-control-label" for="customRadioInline2" >Particulier</label>
+</div>                                                           
+
+  <div class="form-row">
+    <div class="col-md-4">Nom :
+      <input type="text" class="form-control-sm" placeholder="" required name="nom" value="">
+    </div>
+    <div class="col-md-4" id="espace_form" name="prenom">Prénom :
+      <input  type="text" class="form-control-sm" placeholder="" required>
+    </div>
+  </div>
+
+
+ <div class="form-row">
+    <div class="col-md-4">
+      <label for="inputAddress">Code postal :</label>
+       <input type="text" class="form-control-sm" id="inputAddress" placeholder="5 chiffres attendus" required>
+    </div>
+     
+    <div class="col-md-4" id="espace_form"> 
+      <label for="inputCity" name="ville">Ville :</label>
+       <input type="text" class="form-control-sm" id="inputCity" placeholder="" required>
+    </div>
+  </div>
+
+ <div class="form-row ">
+    <div class="col-md-4">
+      <label for="inputEmail4" id="inputEmail4">Email :</label>
+        <input type="email" class="form-control-sm" id="inputEmail4" placeholder="nomprenom@gmail.com"required>
+    </div>
+
+    <div class="col-md-4" id="espace_form">
+      <label for="inputtel4">Téléphone :</label>
+        <input type="tel" class="form-control-sm" id="inputtel4" placeholder="saisir vos 10 chiffres" required>
+    </div>
+  </div>
+
+    <div class="form-row justify-content-between" > 
+    <label for="validationTextarea"> Vôtre message :</label>
+        <textarea class="form-control" id="validationTextarea" placeholder="Merci de bien vouloir nous expliquer clairement vôtre requêtes" row="3"required></textarea>
+  </div>
+  
+</br>
+
+<div class="form-group-row align-items-center form-group">
+  <div class="col-auto my-2">
+    <select class="custom-select" name="choix"required>
+      <option value="">Choix du mâle</option>
+      <option value="1">Locky</option>
+      <option value="2">Negger</option>
+      <option value="3">Lee-Roy</option>
+    </select>
+      <div class="invalid-feedback">Veuillez choisir vôtre étalon</div>
+
+    <div class="col-auto my-1 form-group row">
+      <div class="custom-control custom-checkbox mr-sm-3">
+        <input type="checkbox" class="custom-control-input" id="customControlAutosizing" required>
+        <label class="custom-control-label" for="customControlAutosizing">J'accepte les conditions générales de réservation.
+        </label> 
+      </div>
+    </div>
+  </div>
+
+ <!-- <div class="form-row align-items-center form-group">
+    <div class="col-auto my-2">
+      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-1" id="inlineFormCustomSelect">
+        <option selected>Choix du mâle</option>
+        <option value="1">Locky</option>
+        <option value="2">Negger</option>
+        <option value="3">Lee-Roy</option>
+      </select>
+         <div class="invalid-feedback">Veuillez choisir vôtre étalon</div>
+    </div>
+
+    <div class="col-auto my-1">
+      <div class="custom-control custom-checkbox mr-sm-3">
+        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+        <label class="custom-control-label" for="customControlAutosizing"> J accepte les conditions générales de réservation.
+        </label> 
+      </div>
+    </div>
+  </div> -->
+
+<div class="modal-footer">
+   <div class="form-row">
+  <div class="col-md-12 col-xl-12">  
+    <button  type="submit" name="envoi" value="envoyer">Envoyer</button> 
+     <button type="button"  data-dismiss="modal">Close</button>
+  </div>
+ </div>   
+</form>
+
+    </div>
+  </div>
+</div>
+</div>
+
+</form>
+?>
+
+		  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script>
+      $(function () {
+      $('[data-toggle="popover"]').popover()
+      })
+    </script>
+
+		</body>
+
+</html>

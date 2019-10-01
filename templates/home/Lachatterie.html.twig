@@ -1,0 +1,149 @@
+<!DOCTYPE >
+<html>
+		<head>
+			<title></title>
+
+			<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+				<link rel="stylesheet" type="text/css" href="../css_mjtom/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../css_mjtom/site.css">
+		</head>
+
+		<body>
+			
+		<img src="../images_mjtom/logo.png"  class="img-fluid" alt="Responsive image" >
+
+<nav class="menu" style="background-color: none;">  
+   <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="Accueil.html">Accueil</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link actif" href="Lachatterie.html">La Chatterie</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="larace.html">La race</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="males.html">Mâles</a>
+  </li> <li class="nav-item">
+    <a class="nav-link" href="femelles.html">Femelles</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="chatons.html">Chatons</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="retraites.html" tabindex="-1" aria-disabled="true">Retraités</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+  </li>
+</ul> 
+</nav>
+
+
+<h1 class="ml6" id="alg">
+  <span class="text-wrapper">
+    <span class="letters">Nôtre compagnie vous présente </span>
+  </span>
+</h1>
+
+<p class="ml15">
+  <span class="word">La Chatterie du MajorTom ,</span>
+  <span class="word">du Sergent Pepper's</span>
+   <span class="word">et des Géants de l'Ardéche</span>
+</p>
+
+<p  class="vignets" >Amoureux des chats depuis notre tendre enfance, nous avons découvert le Maine Coon, une race exceptionnelle de chats.
+
+Notre premier Maine Coon, nous l'avons eu en juin 2014, une tendre chattounette hyper affectueuse, et nous nous sommes laissés à penser qu'un compagnon lui serait bénéfique.
+
+En septembre de la même année, un gentil petit garçon intégra la famille, un mâle Maine Coon entier.
+
+Ce jour nous décidames de créer une chatterie familiale pour faire profiter à d'autres notre passion et leur faire découvrir ce chat extraordinaire, affectueux et calme.
+
+Depuis la famille s'est agrandie, et aujourd'hui neuf Maine Coon vivent en parfaite harmonie chez nous pour notre plus grand bonheur.
+</p>
+
+<p class="vignets" >
+
+    Nos chats sont habitués très jeunes à leurs congénères et à la famille, ce qui en fait des chats très sociables et affectueux (ronrons à volonté). Ils peuvent à loisir s’amuser dans notre jardin  ou à l’intérieur sur des arbres à chats dont ils raffolent.
+
+    Ils sont nos enfants et chacun d’eux a un moment d’attention unique (ou est-ce nous...?)
+
+    Notre idée commune est de faire partager notre passion. Attention, cela peut devenir très addictif ! 
+</p>
+
+
+		  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">	
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"> 	
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+      <script>
+
+      // Wrap every letter in a span
+$('.ml6 .letters').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+ 
+anime.timeline({loop: false}) /*évite la répétition active avec true*/
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: function(el, i) {
+      return 50 * i;
+    }
+  }).add({
+    targets: '.ml6',
+    duration: 5000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+   /*<!-- Commande délais apparition des textes -->*/
+
+</script>
+
+<script settimeout= "3000">
+
+    anime.timeline({loop: false})
+
+  .add({
+    targets: '.ml15 .word',
+    duration: 10,
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 800,
+    delay: function(el, i) {
+      return 900 * i;
+    }
+  }).add({
+    targets: '.ml15',
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+    </script>
+
+
+		</body>
+
+</html>

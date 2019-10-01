@@ -1,0 +1,674 @@
+body {
+	position: relative;
+	background-image:url(../images_mjtom/1.png);
+	background-size:cover;
+  background-attachment: fixed;
+
+}
+
+/* -------------------------Pour la navbar --------------------  */
+
+.menu {
+	margin-left:15%;
+	margin-right:15%;
+	margin-bottom:5%;
+ 	margin-top: 0%;
+ 	border-style:solid;
+ 	border-top:50%;
+ 	border-bottom:50%;
+ 	border-right: none;
+ 	border-left: none;
+
+ 
+}
+.actif {
+    color: #DBA901;
+}
+
+li{
+  margin-top:4px;
+	display:inline-block;
+	min-width:10px;
+  min-height:32px;
+}
+
+li a {
+    text-decoration:none;
+    line-height: 10px; /*dimension cadre menu*/
+    padding:10px; /*espace entre les mots menu*/
+    text-align: center;
+    font-family:Louis George Cafe;
+
+}
+
+li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px; /*Epaisseur soulignement*/
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+    width: 100%;
+  background: #444; /*effet souligné survol*/
+  margin-top: 5%;
+
+}
+
+a{
+	color:black;
+	font-family:Louis George Cafe;
+}
+
+a:hover{
+	color:#DBA901; /*couleur survol*/
+	font-family: Louis George Cafe,serif;
+}
+/* -------------------------------Fin navbar -------------------------- */
+
+/* ---------------------- Page accueil ici ----------------------------------*/
+.img-fluid{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:100%;
+  height:auto;
+  margin-top:0%;
+  height:auto;
+}
+
+.bta{
+  display:block;
+  margin-left:auto;
+  margin-right:auto; 
+  height:65%;
+  margin-top:5%;
+}
+
+.btn-acc{
+  display:block;
+  margin-left:auto;
+  margin-right:auto; 
+  height:8%;
+  width:auto;
+}
+/*-----------------------------Cadre accueil-------------------------*/
+
+.section.accueil{
+  max-width:80%;
+  line-height:11;
+  border:2px solid black;
+
+
+}
+
+  .bottom-border{ /*Touche la bordure inf*/
+  position: absolute;
+  height: 2px;
+  width: 35%; /*crée le vide de bordure inf*/
+
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+/*--------------fin test cadre------------------------*/
+ 
+
+/*Gérer les formats d'images*/
+.img-contact{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:200px;
+	height:200px;
+	margin-top:-5%;
+	height:auto;
+}
+
+#taille_ou{
+	width:240px;
+	height:240px;
+	margin-top:-5%;
+	height:auto;
+}
+
+
+  /* -------------------------La chatterie ------------------------ */
+
+.ml6 { /* titre compagnie*/
+  position: relative;
+  font-weight: 50;
+  font-size: 2.3em;
+
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+  margin-top:1%;
+}
+
+
+.ml3 { /*les 3 chatteries*/
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+#alg{
+  text-align: center;
+}
+
+.ml15 {
+  font-weight: 20;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  margin-left:10%;
+  margin-top:3%;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+/*Effet apparition texte titre*/
+
+.vignets {
+    margin-top:0%;
+    animation: fadein 20s;
+    -moz-animation: fadein 20s; /* Firefox */
+    -webkit-animation: fadein 20s; /* Safari et Chrome */
+    -o-animation: fadein 30s; /* Opera */
+     margin-right: 10%;
+    margin-left: 10%;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* ----------------------------- la race -------------------- */
+
+.scrollspy-example{
+  width: 100%;
+  overflow : scroll;
+  height:200px;
+  
+  position:relative;
+
+}
+
+.list-group{
+  background-color: none;
+}
+
+ 
+ .list-group-item.list-group-item-action.active {
+ background-color: none;
+ border-color: none;
+}
+ 
+ .list-group-item.list-group-item-action:hover {
+color: #DBA901;
+
+ }
+
+
+a.list-group-item:nth-child(1) {
+ background-color: unset;
+}
+
+.list-group-item.active {
+ border-color: #007bff;
+ border-color: #090909;
+ color: #DBA901;
+}
+
+.list-group-item-action {
+ color: black;
+}
+
+.list-group-item { /*bootstrap.css*/
+border: 1px solid rgba(0, 0, 0, 0.97);
+}
+
+	
+
+/*--------------------Contenu page males / femelles ici--------------------------*/
+
+.img_tof {
+	width:auto;  /*Pas en % , mieux px proportions identiques en depit des formats différents*/
+	height:250px;	
+} /*actif pour les femelles en attendant le photoshop*/
+
+.test {/*Pas en % , mieux px proportions identiques en depit des formats différents*/
+  width:auto; 
+  height:202px;
+  margin-top:-40px;
+} 
+
+
+/*Cadre résa saillie*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section { /*Touche à la taille du cadre*/
+  position: relative;
+  max-width: 79%;
+  border: 2px solid #333; /*épaisseur contour cadre*/
+  border-top: none;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.section h1 { /*Titre saillies exterieures*/
+  position: relative;
+  margin-top: -14px;
+  display: inline-block;
+  letter-spacing: 1px; /*Espace entre les lettres*/
+  font-size:20px; /*taille police titre*/
+}
+
+.top-border{ /*Touche la bordure supperieure*/
+  position: absolute;
+  height: 2px;
+  width: 32%; /*crée le vide de bordure supp*/
+  background-color: #333;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+@media (max-width: 685px) {
+.top-border {	
+  width: 18%;
+	}
+}
+
+.section p {
+  width: 61%;
+  margin: 20px auto 30px auto; /*1:Espace entre titre et texte 3:entre texte et bouton*/
+  line-height: 30px;
+}
+/*---------------------bouton conditions---------------*/
+
+.btn-link {
+margin-left: -1.9%;
+}
+
+.btn {
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: -3;
+}
+
+.btn-link {
+color: #DBA901;
+}
+
+.btn-link:hover {
+color: #DBA901;
+}
+
+.btn-link:focus, .btn-link.focus {
+text-decoration: underline black;
+}
+
+/*fin condition*/
+
+.sallie_btn { /*Le bouton*/ 
+  margin-top: -0.9%;
+  outline: 0;
+  display: inline-block;
+  padding: 10px; /*Taille espace noir en hauteur*/
+  margin-bottom: 30px;
+  width: 230px; /*Largeur de l'espace noir bouton*/
+  max-width: 40%;
+  background-color:black;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
+.enlevscroll{
+  margin-bottom: -10%;
+}
+  
+.sallie_btn:hover {
+  background-color: #1D222D;
+}
+
+.sallie_btn:link, .section a:visited, .section a:link:hover, .section a:visited:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .top-border {	
+    display: none;
+  }
+  .bottom-border{
+    display : none;
+  }
+
+  .section {
+  border-top: 2px solid #333;
+  }
+  .section h1 {
+    margin: 20px 6px;
+  }
+}
+
+/*Effet zoom sur photos*/
+#zoom div img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#zoom div:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.custom-select {
+width: 15%;
+border: 1px solid #ced4da;
+}
+
+/*------------page femelle effet ---------------*/
+
+.ml14 {
+  font-weight: 100;
+  font-size: 1.2em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 1.5em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 2em;
+}
+
+
+/*---------------Nimue-----------------*/
+
+.affixe-chat{
+  width:20%;
+}
+
+.imgN{
+  max-width:60%;
+  height:auto;
+  margin-top:3%;  
+} 
+
+
+/*-------------------------Page d'entrée chatons----------------------------*/
+
+#menu_chaton{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.chaton_p1 {/*Photo menu */
+  width:258px;  /*Pas en % , mieux px proportions identiques en depit des formats différents*/
+  height:300px; 
+} 
+
+.chaton_m {/*Photo menu */
+  width:300px;  /*Pas en % , mieux px proportions identiques en depit des formats différents*/
+  height:40px;  
+}
+
+/*Page dispo.html*/
+
+
+#dispo_titre{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:30%;
+  height:30%;
+  margin-top:2%;
+  height:auto;
+}
+
+.bt{ /* buton page dispo*/
+  width: 70%;
+  height:auto;
+  margin-top:10%;
+  margin-bottom:10%;
+  margin-left: 30%;
+  margin-right: :auto;
+
+}
+
+ #contain{ /*anciens chatons marge supp*/
+  margin-top:6%;
+ }
+
+#max_photo{
+ max-width:200px;
+  max-height:auto;
+}
+
+.scrollspy-example1{ /*croissance*/
+ width: 80%;
+  overflow : scroll;
+  height:300px;
+  margin-left:10%;
+  margin-right: 10%;
+  position:relative;
+  margin-top: 20%;
+
+}
+.list-group1{
+  width:50%;
+  margin-top: 50%;
+}
+
+.scrollspy-example{
+  width: 100%;
+  overflow : scroll;
+  height:200px;
+  
+  position:relative;
+
+}
+
+.list-group{
+  background-color: none;
+  width: 74%;
+}
+
+ 
+ .list-group-item.list-group-item-action.active {
+ background-color: none;
+ border-color: none;
+}
+ 
+ .list-group-item.list-group-item-action:hover {
+color: #DBA901;
+
+ }
+
+
+a.list-group-item:nth-child(1) {
+ background-color: unset;
+}
+
+.list-group-item.active {
+ border-color: #007bff;
+ border-color: #090909;
+ color: #DBA901;
+}
+
+.list-group-item-action {
+ color: black;
+}
+
+.list-group-item { /*bootstrap.css*/
+border: 1px solid rgba(0, 0, 0, 0.97);
+}
+
+.container{
+  margin-top: 6%;
+}
+
+ img {
+ margin-left: auto;
+ margin-right: auto;
+ }
+
+
+/*Contenu page contact à partir d'ici*/
+
+.p_contact {
+
+	text-align:center;
+	margin-top:1%;
+}
+
+#taille_ou{
+ width:40%;
+margin-top:-7%;
+
+}
+
+.img-contact {
+margin-top: -7%;
+}
+
+#taille_ctct{
+ width:33%;
+
+}
+
+input{
+	width:145%;
+}
+
+#espace_form{/*place btn*/
+	margin-left:20%;
+}
+
+.col-md-1 > button:nth-child(1) {
+margin-left: 80%;
+margin-top:20%;
+}
+
+.col-md-5 > button:nth-child(1){ /*si changement de taille changer après le md- en fonction*/
+  margin-top:4%;
+}
+
+div.form-row:nth-child(5) > div:nth-child(2) > button:nth-child(1) { /*envoyer*/
+ margin-left: 77%;
+ margin-top: 5%;
+ padding-right: 4px;
+ padding-left: 4px;
+}
+
+/*bootstrap.css*/
+.container {
+margin-right: 9%;
+}
+
+/*Lien google map*/
+iframe{
+	margin-left:13%;
+	margin-right:13%;
+}
+
+.form_contact{
+	margin-top:-1%;
+}
+
+.form-row > .col, .form-row > [class*="col-"] {
+ padding-left: 2px;
+}
+
+.form-control { /*correction css boostrap*/
+ line-height: 1.8;
+}
+
