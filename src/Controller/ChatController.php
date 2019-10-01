@@ -13,7 +13,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/chat")
- * @IsGranted("ROLE_ADMIN")
  */
 class ChatController extends AbstractController
 {

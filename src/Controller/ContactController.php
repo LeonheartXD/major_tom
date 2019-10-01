@@ -14,7 +14,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/contact")
- * @IsGranted("ROLE_ADMIN")
  */
 class ContactController extends AbstractController
 {
