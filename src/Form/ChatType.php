@@ -15,6 +15,8 @@ class ChatType extends AbstractType
             ->add('name')
             ->add('genre')
             ->add('chaton')
+            ->add('title')
+            ->add('text')
         ;
     }
 
