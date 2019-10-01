@@ -13,10 +13,18 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/", name="accueil")
+     */
+    public function accueil()
+    {
+        return $this->render('home/Accueil.html.twig');
+    }
+
+    /**
+     * @Route("/home", name="home")
      */
     public function home()
     {
-        return $this->render('home/Accueil.html.twig');
+        return $this->render('home/Lachatterie.html.twig');
     }
 }

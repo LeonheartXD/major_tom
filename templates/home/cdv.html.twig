@@ -1,17 +1,6 @@
-<!DOCTYPE >
-<html>
-		<head>
-			<title></title>
-
-			<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-				<link rel="stylesheet" type="text/css" href="../css_mjtom/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css_mjtom/site.css">
-
-		</head>
-
+{% extends 'base.html.twig' %}
+{% block title %}accueil{% endblock title %}
+{% block body %}
 
 
 <div class="section">
@@ -19,9 +8,6 @@
   <div class="top-border right"></div>
 
   <h1>CONDITIONS DE VENTE</h1>  
-
-    
-
       <p class=" text-justify w-sm-12" >
         Nous attachons la plus haute importance à leurs trouver un foyer responsable, doux et aimant, aussi nous nous réservons le droit de refuser une vente si nous le jugeons nécessaire.
         Les chatons ne peuvent quitter notre foyer qu’au terme de 12 semaines minimum ( soit 3 mois) seuvrés et éduqués correctement par leur mère.</p>
@@ -47,21 +33,6 @@
 
   <section>
       <a href="chatons.html">
-          <img src="../images_mjtom/retour.png" class="btn-acc" alt="Responsive image">
+          <img src="{{ asset('retour.png" class="btn-acc" alt="Responsive image">
       </a>
   </section>
-
-  <!--<div class="bottom-border left"></div> <p>
-  <div class="bottom-border right"></div>
-</div>-->
-
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      
-
-    </body>
-
-</html>

@@ -1,14 +1,6 @@
-<!DOCTYPE >
-<html>
-		<head>
-			<title></title>
-
-			<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-				<link rel="stylesheet" type="text/css" href="../css_mjtom/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css_mjtom/site.css">
+{% extends 'base.html.twig' %}
+{% block title %}accueil{% endblock title %}
+{% block body %}
         <link href="..//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="..//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="..//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -17,7 +9,7 @@
 
 		<body>
 			
-		<img src="../images_mjtom/logo.png"  class="img-fluid" alt="Responsive image" >
+		<img src="{{ asset('logo.png"  class="img-fluid" alt="Responsive image" >
 
 	<nav class="menu" style="background-color: none;">  
    <ul class="nav justify-content-center">
@@ -49,9 +41,9 @@
 </nav>
 
 <div class="d-flex justify-content-around" id="zoom"> 
-  <div><img class="test" src="../images_mjtom/males_L.png" alt="..."></div>
-  <div><img class="test" src="../images_mjtom/males_NG.png"  alt="..."></div>
-  <div><img class="test" src="../images_mjtom/menu-LR.png" alt="..."></div>
+  <div><img class="test" src="{{ asset('males_L.png" alt="..."></div>
+  <div><img class="test" src="{{ asset('males_NG.png"  alt="..."></div>
+  <div><img class="test" src="{{ asset('menu-LR.png" alt="..."></div>
 </div>
 
 

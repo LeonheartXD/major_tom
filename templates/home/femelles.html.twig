@@ -1,20 +1,8 @@
-<!DOCTYPE >
-<html>
-    <head>
-      <title></title>
-
-      <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <link rel="stylesheet" type="text/css" href="../css_mjtom/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css_mjtom/site.css">
-
-    </head>
-
-    <body>
+{% extends 'base.html.twig' %}
+{% block title %}accueil{% endblock title %}
+{% block body %}
       
-    <img src="../images_mjtom/logo.png"  class="img-fluid" alt="Responsive image" >
+    <img src="{{ asset('logo.png"  class="img-fluid" alt="Responsive image" >
 
   <nav class="menu" style="background-color: none;">  
    <ul class="nav justify-content-center">
@@ -46,9 +34,9 @@
 </nav>
 
 <div class="d-flex justify-content-around" id="zoom"> 
-  <div><a href="Nimue.html"><img class="img_tof" src="../images_mjtom/nimue.png" alt="..." href="Nimue.html"></a></div>
-  <div><a href="Nevada.html"><img class="img_tof" src="../images_mjtom/nevada-pf.png" alt="..."></a></div>
-  <div><img class="img_tof" src="../images_mjtom/negrita.png"  alt="..."></div>
+  <div><a href="Nimue.html"><img class="img_tof" src="{{ asset('nimue.png" alt="..." href="Nimue.html"></a></div>
+  <div><a href="Nevada.html"><img class="img_tof" src="{{ asset('nevada-pf.png" alt="..."></a></div>
+  <div><img class="img_tof" src="{{ asset('negrita.png"  alt="..."></div>
 </div>
  
       <!-- Optional JavaScript -->

@@ -1,20 +1,8 @@
-<!DOCTYPE >
-<html>
-    <head>
-      <title></title>
+{% extends 'base.html.twig' %}
+{% block title %}accueil{% endblock title %}
+{% block body %}
 
-      <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-        <link rel="stylesheet" type="text/css" href="../css_mjtom/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css_mjtom/site.css">
-
-    </head>
-
-    <body>
-
-      <div><img class="img-fluid" alt="Responsive image" src="../images_mjtom/anciens.png" id="dispo_titre" alt="..."></div>
+      <div><img class="img-fluid" alt="Responsive image" src="{{ asset('anciens.png" id="dispo_titre" alt="..."></div>
 
 <div class="container" id="contain">
  
@@ -25,30 +13,30 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../images_mjtom/a-1.jpeg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="{{ asset('a-1.jpeg" class="d-block w-100" alt="..." id="max_photo">
       <p>Ou un peu de texte ici</p>
     </div>
 
     <div class="carousel-item">
-      <img src="../images_mjtom/a-5.jpeg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="{{ asset('a-5.jpeg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="../images_mjtom/a-2.jpeg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="{{ asset('a-2.jpeg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="../images_mjtom/a-3.jpeg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="{{ asset('a-3.jpeg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="../images_mjtom/a-4.jpeg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="{{ asset('a-4.jpeg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
@@ -74,7 +62,7 @@
           <br>
           <section>
           <a href="chatons.html">
-            <img src="../images_mjtom/retour.png" class="btn-acc" alt="Responsive image">
+            <img src="{{ asset('retour.png" class="btn-acc" alt="Responsive image">
           </a>
         </section>
       </div>
@@ -82,18 +70,4 @@
   
   </div>
 </div>
-
-
-
-
-
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      
-
-    </body>
-
-</html>
+{% endblock body %}	

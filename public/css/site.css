@@ -1,6 +1,6 @@
 body {
 	position: relative;
-	background-image:url(../images_mjtom/1.png);
+	background-image:url({{ asset('1.png);
 	background-size:cover;
   background-attachment: fixed;
 
