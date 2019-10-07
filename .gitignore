@@ -8,3 +8,5 @@ vendor/
 var/log/
 
 var/cache/dev/
+
+*.txt

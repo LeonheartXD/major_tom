@@ -64,7 +64,7 @@ class ChatController extends AbstractController
      */
     public function edit(Request $request, Chat $chat): Response
     {
-        $form = $this->createForm(Chat2Type::class, $chat);
+        $form = $this->createForm(ChatType::class, $chat);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
