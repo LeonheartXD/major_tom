@@ -14,6 +14,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/admin/news")
+ * @IsGranted("ROLE_ADMIN")
  */
 class NewsController extends AbstractController
 {
