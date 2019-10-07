@@ -13,7 +13,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 
 /**
- * @Route("/contact")
+ * @Route("/contact/contact")
  */
 class ContactController extends AbstractController
 {
