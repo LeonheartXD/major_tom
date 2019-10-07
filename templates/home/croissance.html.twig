@@ -2,18 +2,16 @@
 {% block title %}accueil{% endblock title %}
 {% block body %}
 			
-<div class="container mt-1 d-flex justify-content-start"><img src="{{ asset('croissance.png" alt="Responsive image"></div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col col-lg-3">
-      <div id="list-example" class="list-group">
-  <span class="groupe"><a class="list-group-item list-group-item-action" href="#list-item-1">Auprès de sa mère :</a></span>
-  <span class="groupe"><a class="list-group-item list-group-item-action" href="#list-item-2">L'exploration :</a></span>
-  <span class="groupe"><a class="list-group-item list-group-item-action" href="#list-item-3">Le départ:</a></span>
-  <span class="groupe"><a class="list-group-item list-group-item-action" href="#list-item-4">Le vieux chat:</a></span>
-</div>
+    <div class="container mt-1 d-flex justify-content-start"><img src="croissance.png" alt="Responsive image"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-3">
+            <div id="list-example" class="list-group">
+          <span class="groupe"><a class="list-group-item list-group-item-action" href="#list-item-1">Auprès de sa mère :</a></span>
+          <span class="groupe"><a class="list-group-item list-group-item-action" href="#list-item-2">L'exploration :</a></span>
+          <span class="groupe"><a class="list-group-item list-group-item-action" href="#list-item-3">Le départ:</a></span>
+          <span class="groupe"><a class="list-group-item list-group-item-action" href="#list-item-4">Le vieux chat:</a></span>
+      </div>
     </div>
     <div class="col col-lg-9">
       <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example" >
@@ -44,19 +42,10 @@
   </div>
 
 <div class="container mt-2 d-flex justify-content-center" >
-				<section>
-					<a href="chatons.html">
-						<img src="{{ asset('retour.png" class="bt" alt="Responsive image">
-					</a>
-				</section>
-
-
-  <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-    </body>
-
-</html>
+  <section>
+    <a href="chatons.html">
+      <img src="retour.png" class="bt" alt="Responsive image">
+    </a>
+  </section>
+</div>
+{% endblock body %}

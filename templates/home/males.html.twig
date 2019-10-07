@@ -1,55 +1,12 @@
 {% extends 'base.html.twig' %}
 {% block title %}accueil{% endblock title %}
 {% block body %}
-        <link href="..//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="..//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-        <script src="..//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-		</head>
-
-		<body>
-			
-		<img src="{{ asset('logo.png"  class="img-fluid" alt="Responsive image" >
-
-	<nav class="menu" style="background-color: none;">  
-   <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="Accueil.html">Accueil</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="Lachatterie.html">La Chatterie</a>
-  </li>
-   <li class="nav-item">
-    <a class="nav-link" href="larace.html">La race</a>
-  </li>
-   <li class="nav-item">
-    <a class="nav-link actif" href="males.html">Mâles</a>
-  </li> <li class="nav-item">
-    <a class="nav-link" href="femelles.html">Femelles</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="chatons.html">Chatons</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="retraites.html" tabindex="-1" aria-disabled="true">Retraités</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
-  </li>
-</ul>
-  
-</nav>
 
 <div class="d-flex justify-content-around" id="zoom"> 
-  <div><img class="test" src="{{ asset('males_L.png" alt="..."></div>
-  <div><img class="test" src="{{ asset('males_NG.png"  alt="..."></div>
-  <div><img class="test" src="{{ asset('menu-LR.png" alt="..."></div>
+  <div><img class="test" src="public/image/males_L.png" alt="..."></div>
+  <div><img class="test" src="public/image/males_NG.png"  alt="..."></div>
+  <div><img class="test" src="public/image/menu-LR.png" alt="..."></div>
 </div>
-
-
-
-<!--Test cadre ici -->
-
 
 <div class="section enlevscroll">
   <div class="top-border left"></div>
@@ -66,8 +23,6 @@ Le reste des modalités sera vu ultérieurement avec l'éleveur.">
 </div>
 
 
-<!--Mon modal  formulaire de réservation de saillie-->
-</?php echo
 
 <form class="form_males"  method="post" action="'.$form_action.'">
   <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
@@ -147,27 +102,6 @@ Le reste des modalités sera vu ultérieurement avec l'éleveur.">
     </div>
   </div>
 
- <!-- <div class="form-row align-items-center form-group">
-    <div class="col-auto my-2">
-      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-      <select class="custom-select mr-sm-1" id="inlineFormCustomSelect">
-        <option selected>Choix du mâle</option>
-        <option value="1">Locky</option>
-        <option value="2">Negger</option>
-        <option value="3">Lee-Roy</option>
-      </select>
-         <div class="invalid-feedback">Veuillez choisir vôtre étalon</div>
-    </div>
-
-    <div class="col-auto my-1">
-      <div class="custom-control custom-checkbox mr-sm-3">
-        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-        <label class="custom-control-label" for="customControlAutosizing"> J accepte les conditions générales de réservation.
-        </label> 
-      </div>
-    </div>
-  </div> -->
-
 <div class="modal-footer">
    <div class="form-row">
   <div class="col-md-12 col-xl-12">  
@@ -183,20 +117,5 @@ Le reste des modalités sera vu ultérieurement avec l'éleveur.">
 </div>
 
 </form>
-?>
+{% endblock body %}
 
-		  <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-    <script>
-      $(function () {
-      $('[data-toggle="popover"]').popover()
-      })
-    </script>
-
-		</body>
-
-</html>

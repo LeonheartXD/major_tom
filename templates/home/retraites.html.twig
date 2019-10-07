@@ -1,51 +1,4 @@
-<!DOCTYPE >
-<html>
-		<head>
-			<title></title>
-
-			<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-				<link rel="stylesheet" type="text/css" href="../css_mjtom/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="../css_mjtom/site.css">
-
-		</head>
-
-		<body>
-			
-		<img src="{{ asset('logo.png"  class="img-fluid" alt="Responsive image" >
-
-	<nav class="menu" style="background-color: none;">  
-   <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" href="Accueil.html">Accueil</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="Lachatterie.html">La Chatterie</a>
-  </li>
-   <li class="nav-item">
-    <a class="nav-link" href="larace.html">La race</a>
-  </li>
-   <li class="nav-item">
-    <a class="nav-link" href="males.html">Mâles</a>
-  </li> <li class="nav-item">
-    <a class="nav-link" href="femelles.html">Femelles</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="chatons.html">Chatons</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link actif" href="retraites.html" tabindex="-1" aria-disabled="true">Retraités</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
-  </li>
-</ul>
-  
-</nav>
-
-
+{% block body %}
 
 
 <div class="container" id="contain">
@@ -57,58 +10,58 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{ asset('lily.png" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/lily.png" class="d-block w-100" alt="..." id="max_photo">
       <p>Ou un peu de texte ici</p>
     </div>
 
     <div class="carousel-item">
-      <img src="{{ asset('Lily2.jpg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/Lily2.jpg" class="d-block w-100" alt="..." id="max_photo">
     </div>
 
     <div class="carousel-item">
-      <img src="{{ asset('hermes.png" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/hermes.png" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
      <div class="carousel-item">
-      <img src="{{ asset('Lily1.jpg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/Lily1.jpg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="{{ asset('Lily3.jpg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/Lily3.jpg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="{{ asset('lux.png" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/lux.png" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="{{ asset('Lily4.jpg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/Lily4.jpg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="{{ asset('Lily5.jpg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/Lily5.jpg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="{{ asset('Lily6.jpg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/Lily6.jpg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
 
     <div class="carousel-item">
-      <img src="{{ asset('Lily7.jpg" class="d-block w-100" alt="..." id="max_photo">
+      <img src="public/image/Lily7.jpg" class="d-block w-100" alt="..." id="max_photo">
 
       
     </div>
@@ -135,18 +88,4 @@
   
   </div>
 </div>
-
-
-
-
-
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      
-
-    </body>
-
-</html>
+{% endblock body %}
