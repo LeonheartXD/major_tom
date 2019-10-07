@@ -11,7 +11,37 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        	<img src="public/image/logo.png"  class="img-fluid" alt="Responsive image" >
+
+            <nav class="menu" style="background-color: none;">  
+            <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="Accueil.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link actif" href="Lachatterie.html">La Chatterie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="larace.html">La race</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="males.html">Mâles</a>
+            </li> <li class="nav-item">
+                <a class="nav-link" href="femelles.html">Femelles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chatons.html">Chatons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="retraites.html" tabindex="-1" aria-disabled="true">Retraités</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+            </ul> 
+            </nav>
+        {% endblock %}
         {% block javascripts %}
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
