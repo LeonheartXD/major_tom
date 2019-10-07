@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
- * @Route("/chat")
+ * @Route("/admin/chat")
  */
 class ChatController extends AbstractController
 {

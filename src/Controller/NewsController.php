@@ -13,7 +13,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 
 /**
- * @Route("/news")
+ * @Route("/admin/news")
  */
 class NewsController extends AbstractController
 {
